@@ -22,9 +22,12 @@
 ## Установка и запуск (через OpenServer)
 
 1. **Скачайте и установите OpenServer:**  
+   Перейдите на сайт [OpenServer](https://ospanel.io) и скачайте установочный файл. Следуйте инструкциям на экране для установки.
 
-2. **Поместите проект в папку `domains`**, например:  
-   `C:\OpenServer\domains\stroycomp`
+2. **Клонируйте репозиторий:**  
+   Склонируйте проект из репозитория GitHub в папку `domains` OpenServer:
+   ```bash
+   git clone https://github.com/yourusername/stroycomp.git C:\OpenServer\domains\stroycomp
 
 3. **Настройте домен:**  
    В OpenServer → Настройки → Домены → добавить:  
