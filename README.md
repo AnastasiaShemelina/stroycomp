@@ -27,7 +27,7 @@
 2. **Клонируйте репозиторий:**  
    Склонируйте проект из репозитория GitHub в папку `domains` OpenServer:
    ```bash
-   git clone https://github.com/yourusername/stroycomp.git C:\OpenServer\domains\stroycomp
+   git clone [https://github.com/yourusername/stroycomp.git C:\OpenServer\domains\stroycomp](https://github.com/AnastasiaShemelina/stroycomp.git)
 
 3. **Настройте домен:**  
    В OpenServer → Настройки → Домены → добавить:  
