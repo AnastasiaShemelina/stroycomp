@@ -39,4 +39,6 @@
    - Зайдите в phpMyAdmin (`http://localhost/phpmyadmin`)  
    - Создайте БД с именем **`stroycomp`**
    - Импортируйте дамп `stroycomp.sql`
+  
+6. Запустите проект
 
