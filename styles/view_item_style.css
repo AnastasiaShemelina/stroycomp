@@ -1,0 +1,418 @@
+/* Стили для страницы просмотра заявки или отзыва */
+body {
+    font-family: 'Montserrat-Regular', Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d4bdae;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #8b5e3c;
+    font-family: 'Montserrat-Black', Arial, sans-serif;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #8b5e3c;
+    font-family: 'Montserrat-Black', Arial, sans-serif;
+    font-size: 30px;
+}
+
+header h1 a:hover {
+    color: #7a4d34;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    color: #7a4d34;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: 'Montserrat-Medium', Arial, sans-serif;
+}
+
+nav a:hover {
+    background-color: #8b5e3c;
+    color: white;
+}
+
+.logout-button {
+    background-color: #8b5e3c;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.logout-button:hover {
+    background-color: #7a4d34;
+}
+
+.content {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    color: #7a4d34;
+    text-align: left;
+}
+
+.content h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #7a4d34;
+}
+
+/* Детали заявки */
+.request-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.request-details p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.request-details p strong {
+    font-weight: 600;
+}
+
+/* Изображения */
+.request-details img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+/* Кнопки */
+.request-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+a.edit-button,
+a.approve-button {
+    display: inline-block;
+    background-color: #8b5e3c;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+a.edit-button:hover,
+a.approve-button:hover {
+    background-color: #7a4d34;
+}
+
+a.delete-button,
+a.reject-button {
+    display: inline-block;
+    background-color: #dc3545;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+a.delete-button:hover,
+a.reject-button:hover {
+    background-color: #c82333;
+}
+
+/* Кнопка "Назад" */
+a.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #8b5e3c;
+    text-decoration: none;
+    text-align: left;
+}
+
+a.back-button:hover {
+    color: #7a4d34;
+    text-decoration: underline;
+}
+
+/* Обёртка для деталей заявки */
+.request-details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.request-text {
+    flex: 1 1 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.request-photo {
+    flex: 1 1 40%;
+    text-align: right;
+}
+
+.request-photo img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Кнопки */
+.request-actions {
+    display: flex;
+    justify-content: center; /* Центрируем кнопки */
+    flex-wrap: wrap;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+a.edit-button,
+a.approve-button {
+    display: inline-block;
+    background-color: #8b5e3c;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+a.edit-button:hover,
+a.approve-button:hover {
+    background-color: #7a4d34;
+}
+
+a.delete-button,
+a.reject-button {
+    display: inline-block;
+    background-color: #dc3545;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+a.delete-button:hover,
+a.reject-button:hover {
+    background-color: #c82333;
+}
+
+/* Кнопка "Назад" */
+a.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #8b5e3c;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 0; /* Выровняем по левому краю */
+}
+
+a.back-button:hover {
+    color: #7a4d34;
+    text-decoration: underline;
+}
+
+/* Обёртка для деталей отзыва */
+.item-card {
+    display: flex;
+    flex-direction: column; /* Выстраиваем элементы по вертикали */
+    align-items: center; /* Центрируем всё содержимое */
+    gap: 20px; /* Расстояние между элементами */
+    margin-top: 20px;
+}
+
+.item-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.item-details {
+    text-align: left;
+    width: 100%;
+}
+
+.item-photo {
+    text-align: center;
+}
+
+.item-photo img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.request-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.request-actions a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.edit-button {
+    background-color: #8b5e3c;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #7a4d34;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Универсальное выравнивание кнопки "Назад" */
+a.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #8b5e3c;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 0; /* Сдвигаем влево */
+    margin-right: auto; /* Убираем возможные отступы справа */
+}
+
+a.back-button:hover {
+    color: #7a4d34;
+    text-decoration: underline;
+}
+
+/* Контейнер для тегов (в правом верхнем углу карточки) */
+.content {
+    position: relative; /* Устанавливаем относительное позиционирование для контейнера */
+}
+
+/* Контейнер для тегов */
+.request-tags {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 10px; /* Отступ сверху */
+    right: 10px; /* Отступ справа */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 10; /* Чтобы теги не скрывались за другими элементами */
+}
+
+/* Общий стиль для тегов */
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.status.Новая {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+.status.Отклонена {
+    background-color: lightcoral;
+    color: darkred;
+}
+
+.status.Вработе {
+    background-color: lightyellow;
+    color: goldenrod;
+}
+
+.status.Выполнена {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+
+/* Стиль для типа работ */
+.work-type {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+/* Общий стиль для тегов */
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Подключение шрифтов */
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('fonts/Montserrat-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url('fonts/Montserrat-Thin.ttf');
+}

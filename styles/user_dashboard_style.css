@@ -1,0 +1,338 @@
+/* Стили для личного кабинета пользователя */
+body {
+    font-family: 'Montserrat-Regular', Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d4bdae;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #8b5e3c;
+    font-family: 'Montserrat-Black', Arial, sans-serif;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #8b5e3c;
+    font-family: 'Montserrat-Black', Arial, sans-serif;
+    font-size: 30px;
+}
+
+header h1 a:hover {
+    color: #7a4d34;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    color: #7a4d34;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: 'Montserrat-Medium', Arial, sans-serif;
+}
+
+nav a:hover {
+    background-color: #8b5e3c;
+    color: white;
+}
+
+.logout-button {
+    background-color: #8b5e3c;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.logout-button:hover {
+    background-color: #7a4d34;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    color: #7a4d34;
+}
+
+.content h2 {
+    font-size: 24px;
+    color: #7a4d34;
+}
+
+.content a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: #d4bdae;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content ul li {
+    margin: 10px 0;
+}
+
+/* Карточки для заявок и отзывов */
+.request-cards, .feedback-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.request-card, .feedback-card {
+    background-color: #f8f1e4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 250px;
+}
+
+.request-card h3, .feedback-card h3 {
+    margin: 0;
+    color: #7a4d34;
+}
+
+/* Описание: заявка / отзыв */
+.request-card .work-type {
+    margin-bottom: 8px; /* Меньше отступ после типа работ */
+}
+
+.request-card .request-text {
+    margin-bottom: 15px; /* Больше отступ под текст заявки */
+}
+
+/* Обрезка текста по высоте */
+.request-card p, .feedback-card p {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+/* Кнопка Подробнее */
+.view-more {
+    background-color: #8b5e3c;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.view-more:hover {
+    background-color: #7a4d34;
+}
+
+/* Кнопки */
+button, .create-new-request, .create-new-feedback {
+    background-color: #8b5e3c;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .create-new-request:hover, .create-new-feedback:hover {
+    background-color: #7a4d34;
+}
+
+/* Кнопка оставить отзыв */
+.create-new-feedback {
+    background-color: #8b5e3c;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.create-new-feedback:hover {
+    background-color: #7a4d34;
+}
+
+.create-new-request {
+    background-color: #8b5e3c;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.create-new-request:hover {
+    background-color: #7a4d34;
+}
+
+/* Форма создания заявки и отзыва */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #7a4d34;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #8b5e3c;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #7a4d34;
+}
+
+/* Кнопки */
+button, .create-new-request, .create-new-feedback {
+    background-color: #8b5e3c;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .create-new-request:hover, .create-new-feedback:hover {
+    background-color: #7a4d34;
+}
+
+/* Кнопка "Отмена" */
+/* Кнопка "Отмена" */
+a.btn {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #8b5e3c;
+    text-decoration: none;
+    text-align: center;
+}
+
+a.btn:hover {
+    color: #7a4d34;
+    text-decoration: underline;
+}
+
+
+/* Дополнительные стили для формы */
+form button {
+    background-color: #8b5e3c;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Добавить отступ снизу, чтобы кнопка не прилипала */
+}
+
+form button:hover {
+    background-color: #7a4d34;
+}
+
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .request-cards, .feedback-cards {
+        grid-template-columns: 1fr;
+    }
+
+    button, .create-new-request, .create-new-feedback {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('fonts/Montserrat-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url('fonts/Montserrat-Thin.ttf');
+}
